@@ -1,0 +1,3555 @@
+[
+ {
+  "rutina": "Kettlebell",
+  "k": "L",
+  "dia": "Lunes",
+  "tag": "Fuerza total",
+  "titulo": "5 ejercicios, 4 vueltas",
+  "segs": [
+   {
+    "n": "Around the world (pasar la pesa alrededor del cuerpo)",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Remo al mentón",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Halos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Pasar adelante y atrás entre las piernas",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Swing ruso",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Peso muerto rumano",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Swing a clean",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Zancada atrás con pesa al pecho",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Press de hombro goblet",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Curl en sentadilla",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "15 swings",
+    "s": 45,
+    "note": "Vuelta 1 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "15 sentadillas goblet",
+    "s": 45,
+    "note": "Vuelta 1 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "5 clean + press por lado",
+    "s": 45,
+    "note": "Vuelta 1 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "20 flexiones (de rodillas si hace falta)",
+    "s": 45,
+    "note": "Vuelta 1 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "10 remos balísticos por lado",
+    "s": 45,
+    "note": "Vuelta 1 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso entre vueltas",
+    "s": 75,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "15 swings",
+    "s": 45,
+    "note": "Vuelta 2 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "15 sentadillas goblet",
+    "s": 45,
+    "note": "Vuelta 2 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "5 clean + press por lado",
+    "s": 45,
+    "note": "Vuelta 2 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "20 flexiones (de rodillas si hace falta)",
+    "s": 45,
+    "note": "Vuelta 2 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "10 remos balísticos por lado",
+    "s": 45,
+    "note": "Vuelta 2 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso entre vueltas",
+    "s": 75,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "15 swings",
+    "s": 45,
+    "note": "Vuelta 3 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "15 sentadillas goblet",
+    "s": 45,
+    "note": "Vuelta 3 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "5 clean + press por lado",
+    "s": 45,
+    "note": "Vuelta 3 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "20 flexiones (de rodillas si hace falta)",
+    "s": 45,
+    "note": "Vuelta 3 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "10 remos balísticos por lado",
+    "s": 45,
+    "note": "Vuelta 3 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso entre vueltas",
+    "s": 75,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "15 swings",
+    "s": 45,
+    "note": "Vuelta 4 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "15 sentadillas goblet",
+    "s": 45,
+    "note": "Vuelta 4 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "5 clean + press por lado",
+    "s": 45,
+    "note": "Vuelta 4 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "20 flexiones (de rodillas si hace falta)",
+    "s": 45,
+    "note": "Vuelta 4 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "10 remos balísticos por lado",
+    "s": 45,
+    "note": "Vuelta 4 de 4 · a tu ritmo; si terminas antes, descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso entre vueltas",
+    "s": 45,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Círculos de cuello",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Balanceo de brazos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Giros completos de tronco",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Perro abajo a perro arriba",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Sentadilla profunda con rotación de espalda",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Sentadilla cosaca",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Postura 90/90 de cadera",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Puente de glúteos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Mesa (tabletop)",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Tocar las puntas de los pies",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   }
+  ]
+ },
+ {
+  "rutina": "Kettlebell",
+  "k": "M",
+  "dia": "Martes",
+  "tag": "Espalda y hombros",
+  "titulo": "EMOM de 20 minutos",
+  "segs": [
+   {
+    "n": "Around the world (pasar la pesa alrededor del cuerpo)",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Remo al mentón",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Halos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Pasar adelante y atrás entre las piernas",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Swing ruso",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Peso muerto rumano",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Swing a clean",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Zancada atrás con pesa al pecho",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Press de hombro goblet",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Curl en sentadilla",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "15 swings",
+    "s": 60,
+    "note": "Ciclo 1 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "10 remos alternados",
+    "s": 60,
+    "note": "Ciclo 1 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "8 press de hombro de rodillas (derecha)",
+    "s": 60,
+    "note": "Ciclo 1 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "8 press de hombro de rodillas (izquierda)",
+    "s": 60,
+    "note": "Ciclo 1 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "10 halos alternando sentido",
+    "s": 60,
+    "note": "Ciclo 1 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "15 swings",
+    "s": 60,
+    "note": "Ciclo 2 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "10 remos alternados",
+    "s": 60,
+    "note": "Ciclo 2 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "8 press de hombro de rodillas (derecha)",
+    "s": 60,
+    "note": "Ciclo 2 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "8 press de hombro de rodillas (izquierda)",
+    "s": 60,
+    "note": "Ciclo 2 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "10 halos alternando sentido",
+    "s": 60,
+    "note": "Ciclo 2 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "15 swings",
+    "s": 60,
+    "note": "Ciclo 3 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "10 remos alternados",
+    "s": 60,
+    "note": "Ciclo 3 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "8 press de hombro de rodillas (derecha)",
+    "s": 60,
+    "note": "Ciclo 3 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "8 press de hombro de rodillas (izquierda)",
+    "s": 60,
+    "note": "Ciclo 3 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "10 halos alternando sentido",
+    "s": 60,
+    "note": "Ciclo 3 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "15 swings",
+    "s": 60,
+    "note": "Ciclo 4 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "10 remos alternados",
+    "s": 60,
+    "note": "Ciclo 4 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "8 press de hombro de rodillas (derecha)",
+    "s": 60,
+    "note": "Ciclo 4 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "8 press de hombro de rodillas (izquierda)",
+    "s": 60,
+    "note": "Ciclo 4 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "10 halos alternando sentido",
+    "s": 60,
+    "note": "Ciclo 4 de 4 · reps al inicio, luego descansa",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Círculos de cuello",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Balanceo de brazos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Giros completos de tronco",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Perro abajo a perro arriba",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Sentadilla profunda con rotación de espalda",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Sentadilla cosaca",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Postura 90/90 de cadera",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Puente de glúteos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Mesa (tabletop)",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Tocar las puntas de los pies",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   }
+  ]
+ },
+ {
+  "rutina": "Kettlebell",
+  "k": "X",
+  "dia": "Miércoles",
+  "tag": "Core",
+  "titulo": "Abdomen sin abdominales",
+  "segs": [
+   {
+    "n": "Around the world (pasar la pesa alrededor del cuerpo)",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Remo al mentón",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Halos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Pasar adelante y atrás entre las piernas",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Swing ruso",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Peso muerto rumano",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Swing a clean",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Zancada atrás con pesa al pecho",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Press de hombro goblet",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Curl en sentadilla",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Pasar la pesa alrededor del cuerpo (around the sling)",
+    "s": 30,
+    "note": "Ciclo 1 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 30,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Abdominal con press goblet",
+    "s": 30,
+    "note": "Ciclo 1 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 30,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Halos de rodillas (izq.)",
+    "s": 30,
+    "note": "Ciclo 1 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 30,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Swing lateral a clean (izq.)",
+    "s": 30,
+    "note": "Ciclo 1 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 30,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Halos de rodillas (der.)",
+    "s": 30,
+    "note": "Ciclo 1 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 30,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Swing lateral a clean (der.)",
+    "s": 30,
+    "note": "Ciclo 1 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 30,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Minuto de descanso",
+    "s": 60,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Pasar la pesa alrededor del cuerpo (around the sling)",
+    "s": 30,
+    "note": "Ciclo 2 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 30,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Abdominal con press goblet",
+    "s": 30,
+    "note": "Ciclo 2 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 30,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Halos de rodillas (izq.)",
+    "s": 30,
+    "note": "Ciclo 2 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 30,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Swing lateral a clean (izq.)",
+    "s": 30,
+    "note": "Ciclo 2 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 30,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Halos de rodillas (der.)",
+    "s": 30,
+    "note": "Ciclo 2 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 30,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Swing lateral a clean (der.)",
+    "s": 30,
+    "note": "Ciclo 2 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 30,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Minuto de descanso",
+    "s": 60,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Pasar la pesa alrededor del cuerpo (around the sling)",
+    "s": 30,
+    "note": "Ciclo 3 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 30,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Abdominal con press goblet",
+    "s": 30,
+    "note": "Ciclo 3 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 30,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Halos de rodillas (izq.)",
+    "s": 30,
+    "note": "Ciclo 3 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 30,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Swing lateral a clean (izq.)",
+    "s": 30,
+    "note": "Ciclo 3 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 30,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Halos de rodillas (der.)",
+    "s": 30,
+    "note": "Ciclo 3 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 30,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Swing lateral a clean (der.)",
+    "s": 30,
+    "note": "Ciclo 3 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 30,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Minuto de descanso",
+    "s": 60,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Círculos de cuello",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Balanceo de brazos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Giros completos de tronco",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Perro abajo a perro arriba",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Sentadilla profunda con rotación de espalda",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Sentadilla cosaca",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Postura 90/90 de cadera",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Puente de glúteos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Mesa (tabletop)",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Tocar las puntas de los pies",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   }
+  ]
+ },
+ {
+  "rutina": "Kettlebell",
+  "k": "J",
+  "dia": "Jueves",
+  "tag": "Cuerpo completo",
+  "titulo": "3 movimientos, 20 minutos",
+  "segs": [
+   {
+    "n": "Around the world (pasar la pesa alrededor del cuerpo)",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Remo al mentón",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Halos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Pasar adelante y atrás entre las piernas",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Swing ruso",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Peso muerto rumano",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Swing a clean",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Zancada atrás con pesa al pecho",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Press de hombro goblet",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Curl en sentadilla",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Rondas libres · 20 min",
+    "s": 1200,
+    "note": "1. 5 remos inclinados\n2. 5 swings a una mano\n3. 5 thrusters (sentadilla + press)\nLado derecho, luego izquierdo. Anota tus rondas.",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Círculos de cuello",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Balanceo de brazos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Giros completos de tronco",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Perro abajo a perro arriba",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Sentadilla profunda con rotación de espalda",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Sentadilla cosaca",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Postura 90/90 de cadera",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Puente de glúteos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Mesa (tabletop)",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Tocar las puntas de los pies",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   }
+  ]
+ },
+ {
+  "rutina": "Kettlebell",
+  "k": "V",
+  "dia": "Viernes",
+  "tag": "Complejo",
+  "titulo": "Sinister 7",
+  "segs": [
+   {
+    "n": "Around the world (pasar la pesa alrededor del cuerpo)",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Remo al mentón",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Halos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Pasar adelante y atrás entre las piernas",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Swing ruso",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Peso muerto rumano",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Swing a clean",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Zancada atrás con pesa al pecho",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Press de hombro goblet",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Curl en sentadilla",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Sinister 7 · 20 min",
+    "s": 1200,
+    "note": "1. 7 remos inclinados\n2. 7 cleans goblet\n3. 7 sentadillas goblet\n4. 7 flexiones a peso muerto\nDescansa cuando lo necesites.",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Círculos de cuello",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Balanceo de brazos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Giros completos de tronco",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Perro abajo a perro arriba",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Sentadilla profunda con rotación de espalda",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Sentadilla cosaca",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Postura 90/90 de cadera",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Puente de glúteos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Mesa (tabletop)",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Tocar las puntas de los pies",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   }
+  ]
+ },
+ {
+  "rutina": "Kettlebell",
+  "k": "S",
+  "dia": "Sábado",
+  "tag": "Opcional · intervalos",
+  "titulo": "40 / 20 en dos partes",
+  "segs": [
+   {
+    "n": "Around the world (pasar la pesa alrededor del cuerpo)",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Remo al mentón",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Halos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Pasar adelante y atrás entre las piernas",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Swing ruso",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Peso muerto rumano",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Swing a clean",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Zancada atrás con pesa al pecho",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Press de hombro goblet",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Curl en sentadilla",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Calentamiento"
+   },
+   {
+    "n": "Swing",
+    "s": 40,
+    "note": "Parte 1 · vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Zancada atrás",
+    "s": 40,
+    "note": "Parte 1 · vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Remo + clean (izq.)",
+    "s": 40,
+    "note": "Parte 1 · vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Remo + clean (der.)",
+    "s": 40,
+    "note": "Parte 1 · vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Flexión",
+    "s": 40,
+    "note": "Parte 1 · vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Swing",
+    "s": 40,
+    "note": "Parte 1 · vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Zancada atrás",
+    "s": 40,
+    "note": "Parte 1 · vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Remo + clean (izq.)",
+    "s": 40,
+    "note": "Parte 1 · vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Remo + clean (der.)",
+    "s": 40,
+    "note": "Parte 1 · vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Flexión",
+    "s": 40,
+    "note": "Parte 1 · vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Swing mano a mano",
+    "s": 40,
+    "note": "Parte 2 · vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Thruster",
+    "s": 40,
+    "note": "Parte 2 · vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Dead bug con pullover",
+    "s": 40,
+    "note": "Parte 2 · vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Press con pesa apretada",
+    "s": 40,
+    "note": "Parte 2 · vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Bicicleta abdominal",
+    "s": 40,
+    "note": "Parte 2 · vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Swing mano a mano",
+    "s": 40,
+    "note": "Parte 2 · vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Thruster",
+    "s": 40,
+    "note": "Parte 2 · vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Dead bug con pullover",
+    "s": 40,
+    "note": "Parte 2 · vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Press con pesa apretada",
+    "s": 40,
+    "note": "Parte 2 · vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Bicicleta abdominal",
+    "s": 40,
+    "note": "Parte 2 · vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Descanso",
+    "s": 20,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Círculos de cuello",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Balanceo de brazos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Giros completos de tronco",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Perro abajo a perro arriba",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Sentadilla profunda con rotación de espalda",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Sentadilla cosaca",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Postura 90/90 de cadera",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Puente de glúteos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Mesa (tabletop)",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Tocar las puntas de los pies",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   }
+  ]
+ },
+ {
+  "rutina": "Kettlebell",
+  "k": "D",
+  "dia": "Domingo",
+  "tag": "Descanso",
+  "titulo": "Caminar o solo movilidad",
+  "segs": [
+   {
+    "n": "Círculos de cuello",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Balanceo de brazos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Giros completos de tronco",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Perro abajo a perro arriba",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Sentadilla profunda con rotación de espalda",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Sentadilla cosaca",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Postura 90/90 de cadera",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Puente de glúteos",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Mesa (tabletop)",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   },
+   {
+    "n": "Tocar las puntas de los pies",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Soltar"
+   }
+  ]
+ },
+ {
+  "rutina": "Kettlebell",
+  "k": "T",
+  "dia": "Test",
+  "tag": "Día 1 y día 30",
+  "titulo": "Prueba de 18 minutos",
+  "segs": [
+   {
+    "n": "Prueba · 18 min",
+    "s": 1080,
+    "note": "1. 5 swings a una mano\n2. 5 sentadillas con la pesa en rack\n3. 5 push press\nAnota cuántas rondas completas.",
+    "rest": false,
+    "ph": "Test"
+   }
+  ]
+ },
+ {
+  "rutina": "Elongación",
+  "k": "L",
+  "dia": "Lunes",
+  "tag": "Cuerpo completo",
+  "titulo": "Rutina matinal de corredores",
+  "segs": [
+   {
+    "n": "Postura del niño",
+    "s": 60,
+    "note": "Suelta hombros, respira hondo",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Gato-vaca",
+    "s": 60,
+    "note": "10 repeticiones lentas",
+    "rest": false,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Rotación lumbar acostado",
+    "s": 60,
+    "note": "Rodillas juntas de lado a lado",
+    "rest": false,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Perro boca abajo",
+    "s": 60,
+    "note": "Pedalea los talones",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Sentadilla profunda",
+    "s": 60,
+    "note": "Talones abajo; apóyate si hace falta",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Gato-vaca",
+    "s": 45,
+    "note": "Vuelta 1 de 2 · 15 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Postura del niño",
+    "s": 40,
+    "note": "Vuelta 1 de 2",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Cobra",
+    "s": 40,
+    "note": "Vuelta 1 de 2",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Zancada profunda · izquierda",
+    "s": 40,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Zancada profunda · derecha",
+    "s": 40,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "World’s greatest stretch",
+    "s": 60,
+    "note": "Vuelta 1 de 2 · 15 veces alternando",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Cuádriceps · izquierda",
+    "s": 40,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Cuádriceps · derecha",
+    "s": 40,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Perro boca abajo",
+    "s": 40,
+    "note": "Vuelta 1 de 2",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Paloma · izquierda",
+    "s": 40,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Paloma · derecha",
+    "s": 40,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "90/90 cambios de cadera",
+    "s": 45,
+    "note": "Vuelta 1 de 2 · 15 cambios",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Sentadilla profunda",
+    "s": 40,
+    "note": "Vuelta 1 de 2",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Balanceo de tobillos",
+    "s": 45,
+    "note": "Vuelta 1 de 2 · 15 por lado",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Gato-vaca",
+    "s": 45,
+    "note": "Vuelta 2 de 2 · 15 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Postura del niño",
+    "s": 40,
+    "note": "Vuelta 2 de 2",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Cobra",
+    "s": 40,
+    "note": "Vuelta 2 de 2",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Zancada profunda · izquierda",
+    "s": 40,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Zancada profunda · derecha",
+    "s": 40,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "World’s greatest stretch",
+    "s": 60,
+    "note": "Vuelta 2 de 2 · 15 veces alternando",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Cuádriceps · izquierda",
+    "s": 40,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Cuádriceps · derecha",
+    "s": 40,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Perro boca abajo",
+    "s": 40,
+    "note": "Vuelta 2 de 2",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Paloma · izquierda",
+    "s": 40,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Paloma · derecha",
+    "s": 40,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "90/90 cambios de cadera",
+    "s": 45,
+    "note": "Vuelta 2 de 2 · 15 cambios",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Sentadilla profunda",
+    "s": 40,
+    "note": "Vuelta 2 de 2",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Balanceo de tobillos",
+    "s": 45,
+    "note": "Vuelta 2 de 2 · 15 por lado",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Figura 4 acostado · izquierda",
+    "s": 45,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Figura 4 acostado · derecha",
+    "s": 45,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Puente de glúteos",
+    "s": 30,
+    "note": "Aprieta glúteos, costillas abajo",
+    "rest": true,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Rotación de columna acostado · izquierda",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Rotación de columna acostado · derecha",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Relajación final",
+    "s": 120,
+    "note": "Inhala en 4, exhala en 6. Suelta todo.",
+    "rest": true,
+    "ph": "Cierre"
+   }
+  ]
+ },
+ {
+  "rutina": "Elongación",
+  "k": "M",
+  "dia": "Martes",
+  "tag": "Caderas",
+  "titulo": "Flujo para caderas rígidas",
+  "segs": [
+   {
+    "n": "Postura del niño",
+    "s": 60,
+    "note": "Suelta hombros, respira hondo",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Gato-vaca",
+    "s": 60,
+    "note": "10 repeticiones lentas",
+    "rest": false,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Rotación lumbar acostado",
+    "s": 60,
+    "note": "Rodillas juntas de lado a lado",
+    "rest": false,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Perro boca abajo",
+    "s": 60,
+    "note": "Pedalea los talones",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Sentadilla profunda",
+    "s": 60,
+    "note": "Talones abajo; apóyate si hace falta",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Giro sentado · izquierda",
+    "s": 30,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Giro sentado · derecha",
+    "s": 30,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Mariposa",
+    "s": 60,
+    "note": "Vuelta 1 de 2",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Perro hacia arriba",
+    "s": 45,
+    "note": "Vuelta 1 de 2",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Perro hacia abajo",
+    "s": 60,
+    "note": "Vuelta 1 de 2",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Zancada baja · izquierda",
+    "s": 45,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Zancada baja · derecha",
+    "s": 45,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Media apertura (isquios) · izquierda",
+    "s": 45,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Media apertura (isquios) · derecha",
+    "s": 45,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Zancada creciente · izquierda",
+    "s": 30,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Zancada creciente · derecha",
+    "s": 30,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Zancada lagartija · izquierda",
+    "s": 45,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Zancada lagartija · derecha",
+    "s": 45,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Camello",
+    "s": 45,
+    "note": "Vuelta 1 de 2 · manos en la espalda baja si cuesta",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Giro sentado · izquierda",
+    "s": 30,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Giro sentado · derecha",
+    "s": 30,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Mariposa",
+    "s": 60,
+    "note": "Vuelta 2 de 2",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Perro hacia arriba",
+    "s": 45,
+    "note": "Vuelta 2 de 2",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Perro hacia abajo",
+    "s": 60,
+    "note": "Vuelta 2 de 2",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Zancada baja · izquierda",
+    "s": 45,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Zancada baja · derecha",
+    "s": 45,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Media apertura (isquios) · izquierda",
+    "s": 45,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Media apertura (isquios) · derecha",
+    "s": 45,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Zancada creciente · izquierda",
+    "s": 30,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Zancada creciente · derecha",
+    "s": 30,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Zancada lagartija · izquierda",
+    "s": 45,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Zancada lagartija · derecha",
+    "s": 45,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Camello",
+    "s": 45,
+    "note": "Vuelta 2 de 2 · manos en la espalda baja si cuesta",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Figura 4 acostado · izquierda",
+    "s": 45,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Figura 4 acostado · derecha",
+    "s": 45,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Puente de glúteos",
+    "s": 30,
+    "note": "Aprieta glúteos, costillas abajo",
+    "rest": true,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Rotación de columna acostado · izquierda",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Rotación de columna acostado · derecha",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Relajación final",
+    "s": 120,
+    "note": "Inhala en 4, exhala en 6. Suelta todo.",
+    "rest": true,
+    "ph": "Cierre"
+   }
+  ]
+ },
+ {
+  "rutina": "Elongación",
+  "k": "X",
+  "dia": "Miércoles",
+  "tag": "Espalda baja",
+  "titulo": "Contra la espalda rígida",
+  "segs": [
+   {
+    "n": "Postura del niño",
+    "s": 60,
+    "note": "Suelta hombros, respira hondo",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Gato-vaca",
+    "s": 60,
+    "note": "10 repeticiones lentas",
+    "rest": false,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Rotación lumbar acostado",
+    "s": 60,
+    "note": "Rodillas juntas de lado a lado",
+    "rest": false,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Perro boca abajo",
+    "s": 60,
+    "note": "Pedalea los talones",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Sentadilla profunda",
+    "s": 60,
+    "note": "Talones abajo; apóyate si hace falta",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Rana (frog)",
+    "s": 70,
+    "note": "Vuelta 1 de 3 · 20 veces, cadera atrás y adelante",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Gato-vaca",
+    "s": 70,
+    "note": "Vuelta 1 de 3 · 20 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Cobra dinámica",
+    "s": 70,
+    "note": "Vuelta 1 de 3 · 20 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Paloma dinámica · izquierda",
+    "s": 45,
+    "note": "Vuelta 1 de 3 · 10 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Paloma dinámica · derecha",
+    "s": 45,
+    "note": "Vuelta 1 de 3 · 10 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Isquios dinámico · izquierda",
+    "s": 45,
+    "note": "Vuelta 1 de 3 · 12 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Isquios dinámico · derecha",
+    "s": 45,
+    "note": "Vuelta 1 de 3 · 12 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Pausa en postura del niño",
+    "s": 20,
+    "note": "Vuelta 1 de 3",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Rana (frog)",
+    "s": 70,
+    "note": "Vuelta 2 de 3 · 20 veces, cadera atrás y adelante",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Gato-vaca",
+    "s": 70,
+    "note": "Vuelta 2 de 3 · 20 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Cobra dinámica",
+    "s": 70,
+    "note": "Vuelta 2 de 3 · 20 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Paloma dinámica · izquierda",
+    "s": 45,
+    "note": "Vuelta 2 de 3 · 10 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Paloma dinámica · derecha",
+    "s": 45,
+    "note": "Vuelta 2 de 3 · 10 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Isquios dinámico · izquierda",
+    "s": 45,
+    "note": "Vuelta 2 de 3 · 12 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Isquios dinámico · derecha",
+    "s": 45,
+    "note": "Vuelta 2 de 3 · 12 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Pausa en postura del niño",
+    "s": 20,
+    "note": "Vuelta 2 de 3",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Rana (frog)",
+    "s": 70,
+    "note": "Vuelta 3 de 3 · 20 veces, cadera atrás y adelante",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Gato-vaca",
+    "s": 70,
+    "note": "Vuelta 3 de 3 · 20 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Cobra dinámica",
+    "s": 70,
+    "note": "Vuelta 3 de 3 · 20 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Paloma dinámica · izquierda",
+    "s": 45,
+    "note": "Vuelta 3 de 3 · 10 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Paloma dinámica · derecha",
+    "s": 45,
+    "note": "Vuelta 3 de 3 · 10 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Isquios dinámico · izquierda",
+    "s": 45,
+    "note": "Vuelta 3 de 3 · 12 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Isquios dinámico · derecha",
+    "s": 45,
+    "note": "Vuelta 3 de 3 · 12 veces",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Pausa en postura del niño",
+    "s": 20,
+    "note": "Vuelta 3 de 3",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Figura 4 acostado · izquierda",
+    "s": 45,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Figura 4 acostado · derecha",
+    "s": 45,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Puente de glúteos",
+    "s": 30,
+    "note": "Aprieta glúteos, costillas abajo",
+    "rest": true,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Rotación de columna acostado · izquierda",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Rotación de columna acostado · derecha",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Relajación final",
+    "s": 120,
+    "note": "Inhala en 4, exhala en 6. Suelta todo.",
+    "rest": true,
+    "ph": "Cierre"
+   }
+  ]
+ },
+ {
+  "rutina": "Elongación",
+  "k": "J",
+  "dia": "Jueves",
+  "tag": "Flujo de movilidad",
+  "titulo": "Seis movimientos que despiertan",
+  "segs": [
+   {
+    "n": "Postura del niño",
+    "s": 60,
+    "note": "Suelta hombros, respira hondo",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Gato-vaca",
+    "s": 60,
+    "note": "10 repeticiones lentas",
+    "rest": false,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Rotación lumbar acostado",
+    "s": 60,
+    "note": "Rodillas juntas de lado a lado",
+    "rest": false,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Perro boca abajo",
+    "s": 60,
+    "note": "Pedalea los talones",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Sentadilla profunda",
+    "s": 60,
+    "note": "Talones abajo; apóyate si hace falta",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Pump stretch",
+    "s": 50,
+    "note": "Vuelta 1 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Rebotes suaves de cuerpo",
+    "s": 50,
+    "note": "Vuelta 1 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Sentadilla yogui con alcance",
+    "s": 50,
+    "note": "Vuelta 1 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "World’s greatest stretch",
+    "s": 50,
+    "note": "Vuelta 1 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Crab pulses",
+    "s": 50,
+    "note": "Vuelta 1 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Limpiaparabrisas",
+    "s": 50,
+    "note": "Vuelta 1 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Pump stretch",
+    "s": 50,
+    "note": "Vuelta 2 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Rebotes suaves de cuerpo",
+    "s": 50,
+    "note": "Vuelta 2 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Sentadilla yogui con alcance",
+    "s": 50,
+    "note": "Vuelta 2 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "World’s greatest stretch",
+    "s": 50,
+    "note": "Vuelta 2 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Crab pulses",
+    "s": 50,
+    "note": "Vuelta 2 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Limpiaparabrisas",
+    "s": 50,
+    "note": "Vuelta 2 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Pump stretch",
+    "s": 50,
+    "note": "Vuelta 3 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Rebotes suaves de cuerpo",
+    "s": 50,
+    "note": "Vuelta 3 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Sentadilla yogui con alcance",
+    "s": 50,
+    "note": "Vuelta 3 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "World’s greatest stretch",
+    "s": 50,
+    "note": "Vuelta 3 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Crab pulses",
+    "s": 50,
+    "note": "Vuelta 3 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Limpiaparabrisas",
+    "s": 50,
+    "note": "Vuelta 3 de 3",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Figura 4 sentado · izquierda",
+    "s": 30,
+    "note": "Posturas sostenidas",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Figura 4 sentado · derecha",
+    "s": 30,
+    "note": "Posturas sostenidas",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Rotación lumbar",
+    "s": 60,
+    "note": "Posturas sostenidas",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Estiramiento de tibial (sentado sobre talones)",
+    "s": 60,
+    "note": "Posturas sostenidas",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Sentadilla profunda",
+    "s": 60,
+    "note": "Posturas sostenidas",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Figura 4 acostado · izquierda",
+    "s": 45,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Figura 4 acostado · derecha",
+    "s": 45,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Puente de glúteos",
+    "s": 30,
+    "note": "Aprieta glúteos, costillas abajo",
+    "rest": true,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Rotación de columna acostado · izquierda",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Rotación de columna acostado · derecha",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Relajación final",
+    "s": 120,
+    "note": "Inhala en 4, exhala en 6. Suelta todo.",
+    "rest": true,
+    "ph": "Cierre"
+   }
+  ]
+ },
+ {
+  "rutina": "Elongación",
+  "k": "V",
+  "dia": "Viernes",
+  "tag": "Flexibilidad",
+  "titulo": "Reto de cuerpo rígido",
+  "segs": [
+   {
+    "n": "Postura del niño",
+    "s": 60,
+    "note": "Suelta hombros, respira hondo",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Gato-vaca",
+    "s": 60,
+    "note": "10 repeticiones lentas",
+    "rest": false,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Rotación lumbar acostado",
+    "s": 60,
+    "note": "Rodillas juntas de lado a lado",
+    "rest": false,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Perro boca abajo",
+    "s": 60,
+    "note": "Pedalea los talones",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Sentadilla profunda",
+    "s": 60,
+    "note": "Talones abajo; apóyate si hace falta",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Flexión y extensión de piernas",
+    "s": 60,
+    "note": "Vuelta 1 de 5 · toma los tobillos, estira las rodillas · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Apertura en zancada · lado A",
+    "s": 50,
+    "note": "Vuelta 1 de 5 · brazo al cielo · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Apertura en zancada · lado B",
+    "s": 50,
+    "note": "Vuelta 1 de 5 · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Cobra dinámica",
+    "s": 50,
+    "note": "Vuelta 1 de 5 · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Flexión y extensión de piernas",
+    "s": 60,
+    "note": "Vuelta 2 de 5 · toma los tobillos, estira las rodillas · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Apertura en zancada · lado A",
+    "s": 50,
+    "note": "Vuelta 2 de 5 · brazo al cielo · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Apertura en zancada · lado B",
+    "s": 50,
+    "note": "Vuelta 2 de 5 · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Cobra dinámica",
+    "s": 50,
+    "note": "Vuelta 2 de 5 · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Flexión y extensión de piernas",
+    "s": 60,
+    "note": "Vuelta 3 de 5 · toma los tobillos, estira las rodillas · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Apertura en zancada · lado A",
+    "s": 50,
+    "note": "Vuelta 3 de 5 · brazo al cielo · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Apertura en zancada · lado B",
+    "s": 50,
+    "note": "Vuelta 3 de 5 · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Cobra dinámica",
+    "s": 50,
+    "note": "Vuelta 3 de 5 · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Flexión y extensión de piernas",
+    "s": 60,
+    "note": "Vuelta 4 de 5 · toma los tobillos, estira las rodillas · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Apertura en zancada · lado A",
+    "s": 50,
+    "note": "Vuelta 4 de 5 · brazo al cielo · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Apertura en zancada · lado B",
+    "s": 50,
+    "note": "Vuelta 4 de 5 · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Cobra dinámica",
+    "s": 50,
+    "note": "Vuelta 4 de 5 · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Flexión y extensión de piernas",
+    "s": 60,
+    "note": "Vuelta 5 de 5 · toma los tobillos, estira las rodillas · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Apertura en zancada · lado A",
+    "s": 50,
+    "note": "Vuelta 5 de 5 · brazo al cielo · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Apertura en zancada · lado B",
+    "s": 50,
+    "note": "Vuelta 5 de 5 · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Cobra dinámica",
+    "s": 50,
+    "note": "Vuelta 5 de 5 · 15",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Sentadilla profunda",
+    "s": 60,
+    "note": "",
+    "rest": true,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "90/90 cambios de cadera",
+    "s": 60,
+    "note": "",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Figura 4 acostado · izquierda",
+    "s": 45,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Figura 4 acostado · derecha",
+    "s": 45,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Puente de glúteos",
+    "s": 30,
+    "note": "Aprieta glúteos, costillas abajo",
+    "rest": true,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Rotación de columna acostado · izquierda",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Rotación de columna acostado · derecha",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Relajación final",
+    "s": 120,
+    "note": "Inhala en 4, exhala en 6. Suelta todo.",
+    "rest": true,
+    "ph": "Cierre"
+   }
+  ]
+ },
+ {
+  "rutina": "Elongación",
+  "k": "S",
+  "dia": "Sábado",
+  "tag": "Movilidad suave",
+  "titulo": "12 movimientos, dos vueltas",
+  "segs": [
+   {
+    "n": "Postura del niño",
+    "s": 60,
+    "note": "Suelta hombros, respira hondo",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Gato-vaca",
+    "s": 60,
+    "note": "10 repeticiones lentas",
+    "rest": false,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Rotación lumbar acostado",
+    "s": 60,
+    "note": "Rodillas juntas de lado a lado",
+    "rest": false,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Perro boca abajo",
+    "s": 60,
+    "note": "Pedalea los talones",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Sentadilla profunda",
+    "s": 60,
+    "note": "Talones abajo; apóyate si hace falta",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Círculos de cuello",
+    "s": 50,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Rebotes de cuerpo",
+    "s": 50,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Balanceo de brazos",
+    "s": 50,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Giros completos",
+    "s": 50,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Perro abajo a perro arriba",
+    "s": 50,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Sentadilla + rotación de espalda",
+    "s": 50,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Sentadilla cosaca",
+    "s": 50,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Apertura de piernas sentado (straddle)",
+    "s": 50,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "90/90",
+    "s": 50,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Puente",
+    "s": 50,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Mesa (tabletop)",
+    "s": 50,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Tocar las puntas de los pies",
+    "s": 50,
+    "note": "Vuelta 1 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Círculos de cuello",
+    "s": 50,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Rebotes de cuerpo",
+    "s": 50,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Balanceo de brazos",
+    "s": 50,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Giros completos",
+    "s": 50,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Perro abajo a perro arriba",
+    "s": 50,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Sentadilla + rotación de espalda",
+    "s": 50,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Sentadilla cosaca",
+    "s": 50,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Apertura de piernas sentado (straddle)",
+    "s": 50,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "90/90",
+    "s": 50,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Puente",
+    "s": 50,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Mesa (tabletop)",
+    "s": 50,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Tocar las puntas de los pies",
+    "s": 50,
+    "note": "Vuelta 2 de 2",
+    "rest": false,
+    "ph": "Bloque principal"
+   },
+   {
+    "n": "Figura 4 acostado · izquierda",
+    "s": 45,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Figura 4 acostado · derecha",
+    "s": 45,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Puente de glúteos",
+    "s": 30,
+    "note": "Aprieta glúteos, costillas abajo",
+    "rest": true,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Rotación de columna acostado · izquierda",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Rotación de columna acostado · derecha",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Relajación final",
+    "s": 120,
+    "note": "Inhala en 4, exhala en 6. Suelta todo.",
+    "rest": true,
+    "ph": "Cierre"
+   }
+  ]
+ },
+ {
+  "rutina": "Elongación",
+  "k": "D",
+  "dia": "Domingo",
+  "tag": "Descanso activo",
+  "titulo": "Solo 10 minutos anti-dolor",
+  "segs": [
+   {
+    "n": "Postura del niño",
+    "s": 60,
+    "note": "Suelta hombros, respira hondo",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Gato-vaca",
+    "s": 60,
+    "note": "10 repeticiones lentas",
+    "rest": false,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Rotación lumbar acostado",
+    "s": 60,
+    "note": "Rodillas juntas de lado a lado",
+    "rest": false,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Perro boca abajo",
+    "s": 60,
+    "note": "Pedalea los talones",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Sentadilla profunda",
+    "s": 60,
+    "note": "Talones abajo; apóyate si hace falta",
+    "rest": true,
+    "ph": "Despertar"
+   },
+   {
+    "n": "Figura 4 acostado · izquierda",
+    "s": 45,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Figura 4 acostado · derecha",
+    "s": 45,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Puente de glúteos",
+    "s": 30,
+    "note": "Aprieta glúteos, costillas abajo",
+    "rest": true,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Rotación de columna acostado · izquierda",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Rotación de columna acostado · derecha",
+    "s": 30,
+    "note": "",
+    "rest": false,
+    "ph": "Cierre"
+   },
+   {
+    "n": "Relajación final",
+    "s": 120,
+    "note": "Inhala en 4, exhala en 6. Suelta todo.",
+    "rest": true,
+    "ph": "Cierre"
+   }
+  ]
+ },
+ {
+  "rutina": "Elongación",
+  "k": "T",
+  "dia": "Test",
+  "tag": "Día 1 y día 30",
+  "titulo": "Test de movilidad",
+  "segs": [
+   {
+    "n": "Sentadilla profunda",
+    "s": 120,
+    "note": "Meta: 2 minutos. Anota cuánto aguantas.",
+    "rest": true,
+    "ph": "Test"
+   },
+   {
+    "n": "Puños al suelo",
+    "s": 30,
+    "note": "Sin doblar rodillas. ¿Llegas?",
+    "rest": false,
+    "ph": "Test"
+   },
+   {
+    "n": "Equilibrio a una pierna · izquierda",
+    "s": 60,
+    "note": "Meta: 1 minuto",
+    "rest": false,
+    "ph": "Test"
+   },
+   {
+    "n": "Equilibrio a una pierna · derecha",
+    "s": 60,
+    "note": "Meta: 1 minuto",
+    "rest": false,
+    "ph": "Test"
+   },
+   {
+    "n": "Sentarte y levantarte sin manos",
+    "s": 60,
+    "note": "Prueba hasta 3 veces",
+    "rest": false,
+    "ph": "Test"
+   }
+  ]
+ }
+]

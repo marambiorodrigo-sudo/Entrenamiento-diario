@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#161b21">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<title>Rutinas al Amanecer</title>
+<style>
+/* Layout: app de una columna para el celular — barra de voz, pantalla de ejercicio o video, controles grandes, elección de rutina */
+:root {
+  --bg: #161b21; --panel: #1f262e; --ink: #eef1f4; --muted: #9aa5b1; --line: #2e3742;
+  --kb: #f0974a; --el: #a3c97c; --hold: #c9bdf5; --live: #ff6b6b; --ok: #6cc6b2;
+  --accent: var(--kb);
+  --f-body: system-ui, "Segoe UI", Roboto, sans-serif; --f-mono: ui-monospace, "Roboto Mono", Consolas, monospace;
+  color-scheme: dark;
+}
+body.el { --accent: var(--el) }
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent }
+[hidden] { display: none !important }
+html, body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.45 var(--f-body) }
+.wrap { max-width: 760px; margin: 0 auto; display: grid; gap: 12px;
+  padding: max(12px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(24px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left)) }
+button { font: 600 16px var(--f-body); border-radius: 10px; border: 1px solid var(--line); background: #ffffff10; color: var(--ink); padding: 12px 14px; cursor: pointer; touch-action: manipulation }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+button.main { background: var(--accent); border-color: var(--accent); color: #111 }
+.mic { display: flex; align-items: center; gap: 10px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 8px 8px 8px 14px }
+.dot { width: 12px; height: 12px; border-radius: 50%; background: var(--muted); flex: none }
+.mic.on .dot { background: var(--live); animation: pulse 1.6s infinite }
+@keyframes pulse { 50% { opacity: .35 } }
+@media (prefers-reduced-motion: reduce) { .mic.on .dot { animation: none } }
+.heard { flex: 1; min-width: 0; color: var(--muted); font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.heard em { color: var(--ink); font-style: normal }
+.warn { color: var(--live); font-size: 14px; margin: 0 }
+.vid { width: 100%; border-radius: 12px; background: #000; display: block; max-height: 70vh }
+.stage { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px; display: grid; gap: 6px }
+.top { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; color: var(--muted); font-weight: 600; font-size: 12px; letter-spacing: .06em; text-transform: uppercase }
+.clock { font: 700 clamp(72px, 26vw, 150px)/1 var(--f-mono); font-variant-numeric: tabular-nums; letter-spacing: -.03em }
+.clock.rest { color: var(--hold) }
+.name { font-size: clamp(24px, 7vw, 38px); font-weight: 700; color: var(--accent); line-height: 1.15 }
+.note { color: var(--muted); white-space: pre-line; font-size: 16px }
+.next { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; font-size: 15px; margin-top: 4px }
+.bar { height: 7px; background: #ffffff18; border-radius: 4px; overflow: hidden }
+.bar i { display: block; height: 100%; width: 0; background: var(--accent) }
+.ctrl { display: grid; grid-template-columns: 1fr 2fr 1fr 1fr; gap: 8px }
+.ctrl button { padding: 14px 4px }
+.box { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px; display: grid; gap: 10px }
+.box h2 { margin: 0; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted) }
+.seg { display: grid; grid-template-columns: 1fr 1fr; gap: 6px }
+.seg button.on, .days button.on { background: var(--accent); color: #111; border-color: var(--accent) }
+.days { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px }
+.days button { padding: 10px 2px; font-size: 15px }
+.days button small { display: block; font-size: 11px; font-weight: 400; color: var(--muted) }
+.days button.on small { color: #333 }
+.days button.hoy { border-color: var(--accent) }
+.cmds { margin: 0; padding-left: 18px; font-size: 14px; color: var(--muted); display: grid; gap: 4px }
+.cmds q { color: var(--ink); quotes: "«" "»" }
+.off { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 14px; color: var(--muted) }
+.off .ok { color: var(--ok) }
+details summary { cursor: pointer; color: var(--muted); font-weight: 600; font-size: 14px }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mic" id="mic">
+    <span class="dot"></span>
+    <span class="heard" id="heard">Toca «Voz» y di: <em>«video kettlebell hoy»</em></span>
+    <button class="main" id="bMic" type="button">Voz</button>
+  </div>
+  <p class="warn" id="warn" hidden></p>
+
+  <video id="vid" class="vid" controls playsinline hidden></video>
+
+  <div class="stage" id="stage">
+    <div class="top"><span id="tTitle">Elige una rutina abajo</span><span id="tPhase"></span></div>
+    <div class="clock" id="tClock">00:00</div>
+    <div class="name" id="tName">¿Qué entrenamos hoy?</div>
+    <div class="note" id="tNote"></div>
+    <div class="next"><span id="tNext"></span><span id="tLeft" style="color:var(--muted)"></span></div>
+    <div class="bar"><i id="tBar"></i></div>
+  </div>
+
+  <div class="ctrl">
+    <button id="bPrev" type="button" aria-label="Anterior">‹</button>
+    <button class="main" id="bGo" type="button">Empezar</button>
+    <button id="bSkip" type="button" aria-label="Siguiente">›</button>
+    <button id="bRep" type="button" aria-label="Repetir">↺</button>
+  </div>
+
+  <div class="box">
+    <div class="seg" id="segR">
+      <button type="button" data-r="Kettlebell">Kettlebell</button>
+      <button type="button" data-r="Elongación">Elongación</button>
+    </div>
+    <div class="days" id="days"></div>
+    <div class="seg" id="segM">
+      <button type="button" data-m="timer">Temporizador</button>
+      <button type="button" data-m="video">Video</button>
+    </div>
+  </div>
+
+  <div class="box">
+    <h2>Sin internet</h2>
+    <div class="off"><span id="offState">Revisando videos guardados…</span><button id="bSave" type="button">Guardar videos (94 MB)</button></div>
+  </div>
+
+  <details class="box">
+    <summary>Lo que puedes decir</summary>
+    <ul class="cmds">
+      <li><q>Kettlebell martes</q>, <q>elongación hoy</q>, <q>yoga test</q></li>
+      <li><q>Video kettlebell lunes</q> · <q>sin video</q></li>
+      <li><q>Empezar</q> · <q>pausa</q> · <q>continuar</q></li>
+      <li><q>Siguiente</q> · <q>anterior</q> · <q>repetir</q> · <q>más tiempo</q></li>
+      <li><q>¿Cuánto falta?</q> · <q>¿Qué sigue?</q> · <q>terminar</q> · <q>ayuda</q></li>
+    </ul>
+  </details>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const DIAS = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo', 'Test'];
+const KEYS = 'LMXJVSDT';
+const HOY = KEYS[(new Date().getDay() + 6) % 7];
+const INTRO = 10;
+const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+const fmt = s => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(Math.max(0, s) % 60).padStart(2, '0')}`;
+const videoDe = (rutina, k) => `videos/${rutina === 'Kettlebell' ? 'kb' : 'el'}-${k}.mp4`;
+const vid = $('vid');
+let RUT = [], cur = null, i = 0, left = 0, tick = null, modo = 'timer', starts = [], selR = 'Kettlebell';
+try { modo = localStorage.getItem('modo') || 'timer'; selR = localStorage.getItem('rutina') || 'Kettlebell' } catch (e) {}
+
+// ---------- voz que habla y pitidos ----------
+let voz = null, hablando = false;
+function elegirVoz() {
+  const vs = speechSynthesis.getVoices().filter(v => v.lang.toLowerCase().startsWith('es'));
+  const pref = ['es-CL', 'es-US', 'es-MX', 'es-419', 'es-ES'];
+  vs.sort((a, b) => ((pref.indexOf(a.lang) + 99) % 99) - ((pref.indexOf(b.lang) + 99) % 99));
+  voz = vs[0] || null;
+}
+if ('speechSynthesis' in window) { speechSynthesis.onvoiceschanged = elegirVoz; elegirVoz() }
+function decir(t) {
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(t); u.lang = voz?.lang || 'es-ES'; if (voz) u.voice = voz;
+    u.onstart = () => { hablando = true }; u.onend = u.onerror = () => { hablando = false };
+    speechSynthesis.speak(u);
+  } catch (e) {}
+}
+let ac = null;
+function beep(f = 880, d = .2, vol = .3) {
+  try { ac ??= new AudioContext(); const o = ac.createOscillator(), g = ac.createGain();
+    o.frequency.value = f; o.connect(g); g.connect(ac.destination);
+    g.gain.setValueAtTime(vol, ac.currentTime); g.gain.exponentialRampToValueAtTime(.001, ac.currentTime + d);
+    o.start(); o.stop(ac.currentTime + d) } catch (e) {}
+}
+let lock = null;
+async function mantenerPantalla(on) {
+  try { if (on && !lock) { lock = await navigator.wakeLock.request('screen'); lock.onrelease = () => { lock = null } } else if (!on && lock) { lock.release(); lock = null } } catch (e) {}
+}
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && (tick || (modo === 'video' && !vid.paused))) mantenerPantalla(true) });
+
+// ---------- selección ----------
+function drawPick() {
+  document.querySelectorAll('#segR button').forEach(b => b.classList.toggle('on', b.dataset.r === selR));
+  document.querySelectorAll('#segM button').forEach(b => b.classList.toggle('on', b.dataset.m === modo));
+  $('days').innerHTML = DIAS.map((d, n) => { const k = KEYS[n], r = RUT.find(x => x.rutina === selR && x.k === k);
+    return `<button type="button" data-k="${k}" class="${cur && cur.rutina === selR && cur.k === k ? 'on' : ''} ${k === HOY ? 'hoy' : ''}">${k === 'T' ? 'Test' : d.slice(0, 3)}<small>${r ? r.tag.split(' ·')[0] : ''}</small></button>` }).join('');
+  document.body.classList.toggle('el', (cur?.rutina || selR) === 'Elongación');
+}
+function guardarPref() { try { localStorage.setItem('modo', modo); localStorage.setItem('rutina', selR) } catch (e) {} }
+$('segR').onclick = e => { const b = e.target.closest('button'); if (b) { selR = b.dataset.r; guardarPref(); drawPick() } };
+$('segM').onclick = e => { const b = e.target.closest('button'); if (!b) return; setModo(b.dataset.m); if (cur) cargar(cur.rutina, cur.k, true) };
+$('days').onclick = e => { const b = e.target.closest('button'); if (b) cargar(selR, b.dataset.k) };
+
+function setModo(m) {
+  modo = m; guardarPref();
+  if (m === 'timer') { vid.pause(); vid.hidden = true; $('stage').hidden = false } else { stop(); $('stage').hidden = true; vid.hidden = false }
+  drawPick(); paint();
+}
+
+// ---------- temporizador ----------
+const total = () => cur ? cur.segs.reduce((a, s) => a + s.s, 0) : 0;
+const hecho = () => cur.segs.slice(0, i).reduce((a, s) => a + s.s, 0) + ((cur.segs[i]?.s || 0) - left);
+const frase = s => `${s.n.replace(/ · /g, ', ')}. ${s.s >= 60 && s.s % 60 === 0 ? `${s.s / 60} ${s.s === 60 ? 'minuto' : 'minutos'}` : `${s.s} segundos`}.`;
+function cargar(rutina, k, silencio) {
+  const r = RUT.find(x => x.rutina === rutina && x.k === k);
+  if (!r) return;
+  stop(); cur = r; selR = rutina; i = 0; left = r.segs[0]?.s || 0; guardarPref();
+  let t = INTRO; starts = r.segs.map(s => { const a = t; t += s.s; return a });
+  drawPick();
+  if (modo === 'video') {
+    vid.src = videoDe(rutina, k); vid.hidden = false; $('stage').hidden = true;
+    if (!silencio) vid.play().then(() => mantenerPantalla(true)).catch(() => decir('Video listo. Toca empezar o di empezar.'));
+  } else if (!silencio) decir(`${rutina}, ${r.dia}: ${r.titulo}. ${Math.round(total() / 60)} minutos. Di empezar cuando estés listo.`);
+  paint();
+}
+function paint() {
+  const goTxt = modo === 'video' ? (vid.paused ? 'Reproducir' : 'Pausa') : (tick ? 'Pausa' : (cur && i === 0 && left === cur.segs[0]?.s ? 'Empezar' : 'Continuar'));
+  $('bGo').textContent = cur ? goTxt : 'Empezar';
+  if (!cur || modo === 'video') return;
+  const s = cur.segs[i];
+  $('tTitle').textContent = `${cur.rutina} · ${cur.dia}`;
+  if (!s) { $('tPhase').textContent = 'Terminada'; $('tClock').textContent = '00:00'; $('tName').textContent = 'Sesión terminada';
+    $('tNote').textContent = 'Buen trabajo.'; $('tNext').textContent = ''; $('tLeft').textContent = ''; $('tBar').style.width = '100%'; return }
+  $('tPhase').textContent = `${s.ph} · ${i + 1}/${cur.segs.length}`;
+  $('tClock').textContent = fmt(left); $('tClock').classList.toggle('rest', !!s.rest);
+  $('tName').textContent = s.n; $('tNote').textContent = s.note || '';
+  const nx = cur.segs[i + 1]; $('tNext').textContent = nx ? `Sigue: ${nx.n}` : 'Último ejercicio';
+  $('tLeft').textContent = `quedan ${fmt(total() - hecho())}`;
+  $('tBar').style.width = (hecho() / total() * 100) + '%';
+}
+function anunciar() { const s = cur.segs[i]; if (s) { beep(s.rest ? 523 : 880, .3); decir(frase(s)) } }
+function step() {
+  left--;
+  if (left > 0 && left <= 3 && cur.segs[i].s > 8) beep(660, .1, .2);
+  if (left <= 0) { i++; if (cur.segs[i]) { left = cur.segs[i].s; anunciar() } else { stop(); beep(990, .7); decir('Sesión terminada. Buen trabajo.') } }
+  paint();
+}
+function start() {
+  if (!cur) { decir('Primero elige una rutina.'); return }
+  if (modo === 'video') { vid.play().then(() => mantenerPantalla(true)).catch(() => {}); return }
+  if (!cur.segs[i]) { i = 0; left = cur.segs[0].s }
+  if (tick) return;
+  tick = setInterval(step, 1000); anunciar(); mantenerPantalla(true); paint();
+}
+function stop() { clearInterval(tick); tick = null; mantenerPantalla(false); paint() }
+function pausa() { if (modo === 'video') { vid.pause(); return } if (tick) { stop(); decir('Pausa.') } }
+const segVideo = () => { let n = -1; starts.forEach((a, j) => { if (vid.currentTime >= a - .2) n = j }); return n };
+function ir(d) {
+  if (!cur) return;
+  if (modo === 'video') { const n = segVideo() + d; vid.currentTime = n < 0 ? 0 : starts[Math.min(n, starts.length - 1)]; return }
+  i = Math.max(0, Math.min(cur.segs.length - 1, i + d)); left = cur.segs[i].s;
+  tick ? anunciar() : decir(frase(cur.segs[i])); paint();
+}
+function repetir() { if (modo === 'video') { ir(0); return } if (cur?.segs[i]) { left = cur.segs[i].s; if (tick) anunciar(); paint() } }
+function masTiempo() {
+  if (modo === 'video') { vid.pause(); setTimeout(() => vid.play().catch(() => {}), 15000); decir('Quince segundos más.'); return }
+  if (cur?.segs[i]) { left += 15; paint(); decir('Quince segundos más.') }
+}
+function decirSobreVideo(t) { const v = vid.volume; vid.volume = .15; decir(t); setTimeout(() => { vid.volume = v }, 3500) }
+function cuantoFalta() {
+  if (!cur) return;
+  if (modo === 'video') { const n = Math.max(0, segVideo()); decirSobreVideo(`Quedan ${Math.max(0, Math.round(starts[n] + cur.segs[n].s - vid.currentTime))} segundos de este ejercicio.`); return }
+  decir(`Quedan ${left} segundos de este ejercicio y ${Math.round((total() - hecho()) / 60)} minutos de sesión.`);
+}
+function queSigue() {
+  if (!cur) return;
+  const n = modo === 'video' ? segVideo() + 1 : i + 1, nx = cur.segs[n];
+  (modo === 'video' ? decirSobreVideo : decir)(nx ? `Sigue ${nx.n.replace(/ · /g, ', ')}.` : 'Es el último ejercicio.');
+}
+vid.addEventListener('play', () => { mantenerPantalla(true); paint() });
+vid.addEventListener('pause', paint);
+vid.addEventListener('error', () => { if (vid.src) aviso('Este video no está disponible sin internet. Conéctate o toca «Guardar videos».') });
+
+$('bGo').onclick = () => (modo === 'video' ? !vid.paused : tick) ? pausa() : start();
+$('bPrev').onclick = () => ir(-1); $('bSkip').onclick = () => ir(1); $('bRep').onclick = repetir;
+
+// ---------- comandos de voz ----------
+function interpretar(texto) {
+  const t = norm(texto);
+  const rutina = /kettle|ketle|quetel|pesa rusa|kb\b/.test(t) ? 'Kettlebell' : /elonga|estira|yoga|movilidad|flexib/.test(t) ? 'Elongación' : null;
+  const dias = { lunes: 'L', martes: 'M', miercoles: 'X', jueves: 'J', viernes: 'V', sabado: 'S', domingo: 'D', test: 'T', prueba: 'T', hoy: HOY };
+  const dia = Object.keys(dias).find(d => new RegExp('\\b' + d + '\\b').test(t));
+  const quitaVideo = /sin video|salir del video|quitar video|temporizador/.test(t);
+  const pideVideo = /\bvideo\b/.test(t) && !quitaVideo;
+  if (quitaVideo) { setModo('timer'); if (cur) cargar(cur.rutina, cur.k, true); decir('Modo temporizador.'); return 'sin video' }
+  if (rutina || (dia && /rutina|entren|video/.test(t))) {
+    if (pideVideo) setModo('video');
+    cargar(rutina || cur?.rutina || selR, dia ? dias[dia] : HOY); return pideVideo ? 'video' : 'rutina';
+  }
+  if (pideVideo) { setModo('video'); if (cur) cargar(cur.rutina, cur.k); return 'video' }
+  if (/que sigue|que viene|proximo ejercicio/.test(t)) { queSigue(); return 'qué sigue' }
+  if (/cuanto (falta|queda)|tiempo queda|cuanto tiempo/.test(t)) { cuantoFalta(); return 'cuánto falta' }
+  if (/mas tiempo|segundos mas|alarga/.test(t)) { masTiempo(); return 'más tiempo' }
+  if (/terminar|termina|detener|finalizar|cancelar/.test(t)) {
+    if (cur) { if (modo === 'video') { vid.pause(); vid.currentTime = 0 } else { stop(); i = 0; left = cur.segs[0].s; paint() } decir('Rutina detenida.') }
+    return 'terminar';
+  }
+  if (/pausa|para\b|espera|alto|stop/.test(t)) { pausa(); return 'pausa' }
+  if (/siguiente|salta|saltar|proximo|adelante/.test(t)) { ir(1); return 'siguiente' }
+  if (/anterior|atras|vuelve|volver/.test(t)) { ir(-1); return 'anterior' }
+  if (/repite|repetir|otra vez|de nuevo|reinicia/.test(t)) { repetir(); return 'repetir' }
+  if (/empez|comenz|inicia|dale|vamos|partir|continua|sigue|reanuda|play|reproduc/.test(t)) { start(); return 'empezar' }
+  if (/ayuda|comandos|que puedo decir/.test(t)) { decir('Di kettlebell o elongación más el día, o video y la rutina. Luego empezar, pausa, siguiente, anterior, repetir, más tiempo, cuánto falta, qué sigue o terminar.'); return 'ayuda' }
+  return null;
+}
+window.__cmd = interpretar;   // para probar sin micrófono
+const narrando = () => modo === 'video' && !vid.paused && starts.some(a => vid.currentTime >= a && vid.currentTime < a + 4.5);
+
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+let rec = null, escuchando = false;
+function aviso(t) { $('warn').textContent = t; $('warn').hidden = !t }
+function micUI() { $('mic').classList.toggle('on', escuchando); $('bMic').textContent = escuchando ? 'Apagar' : 'Voz' }
+function activarMic() {
+  if (!SR) { aviso('Este navegador no reconoce voz. Usa Google Chrome.'); return }
+  rec = new SR(); rec.lang = 'es-CL'; rec.continuous = true; rec.interimResults = false;
+  rec.onresult = e => {
+    const r = e.results[e.results.length - 1]; if (!r.isFinal) return;
+    const txt = r[0].transcript.trim();
+    if ((hablando || narrando()) && !/pausa|para|alto|stop/.test(norm(txt))) return;
+    const c = interpretar(txt);
+    $('heard').innerHTML = c ? 'Entendí <em></em> → ' + c : 'Escuché <em></em>';
+    $('heard').querySelector('em').textContent = `«${txt}»`;
+  };
+  rec.onerror = e => {
+    if (e.error === 'not-allowed' || e.error === 'service-not-allowed') { escuchando = false; micUI(); aviso('Chrome no dio permiso al micrófono. Permítelo en los ajustes del sitio y vuelve a tocar «Voz».') }
+    else if (e.error === 'network') aviso('El control por voz necesita internet. Sin conexión, usa los botones.');
+  };
+  rec.onend = () => { if (escuchando) setTimeout(() => { try { rec.start() } catch (e) {} }, 250) };
+  try { rec.start(); escuchando = true; aviso(''); decir('Te escucho.') } catch (e) { aviso('No se pudo iniciar el micrófono.') }
+  micUI();
+}
+$('bMic').onclick = () => { if (escuchando) { escuchando = false; try { rec.stop() } catch (e) {} micUI() } else activarMic() };
+
+// ---------- uso sin internet ----------
+async function estadoOffline() {
+  if (!('caches' in window) || !RUT.length) { $('offState').textContent = 'Este navegador no permite guardar videos.'; $('bSave').hidden = true; return }
+  const c = await caches.open('rutinas-videos');
+  const rutas = RUT.map(r => new URL(videoDe(r.rutina, r.k), location.href).pathname);
+  const n = (await Promise.all(rutas.map(p => c.match(p)))).filter(Boolean).length;
+  $('offState').innerHTML = n === rutas.length ? '<span class="ok">Los 16 videos están guardados en el teléfono.</span>' : `${n} de ${rutas.length} videos guardados. El temporizador funciona siempre sin internet.`;
+  $('bSave').hidden = n === rutas.length;
+}
+$('bSave').onclick = async () => {
+  $('bSave').disabled = true;
+  try {
+    await navigator.storage?.persist?.();
+    const c = await caches.open('rutinas-videos');
+    let k = 0;
+    for (const r of RUT) {
+      const url = new URL(videoDe(r.rutina, r.k), location.href);
+      if (!(await c.match(url.pathname))) {
+        $('offState').textContent = `Guardando ${++k}… (${r.rutina} ${r.dia})`;
+        const resp = await fetch(url.href, { cache: 'no-store' });
+        if (!resp.ok) throw new Error(resp.status);
+        await c.put(url.pathname, resp);
+      }
+    }
+  } catch (e) { aviso('No se pudieron guardar todos los videos. Revisa la conexión o el espacio libre y vuelve a intentarlo.') }
+  $('bSave').disabled = false; estadoOffline();
+};
+
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+fetch('segmentos.json').then(r => r.json()).then(d => {
+  RUT = d; setModo(modo); cargar(selR, HOY, true); estadoOffline();
+}).catch(() => aviso('No se pudieron cargar las rutinas.'));
+drawPick();
+</script>
+</body>
+</html>
