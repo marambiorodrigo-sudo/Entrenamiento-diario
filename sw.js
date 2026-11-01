@@ -1,5 +1,5 @@
 // Service worker: guarda la app para usarla sin internet y sirve los videos guardados (con saltos por rango).
-const SHELL = 'rutinas-app-v3';
+const SHELL = 'rutinas-app-v4';
 const VIDEOS = 'rutinas-videos';
 const ARCHIVOS = ['./', 'index.html', 'manifest.webmanifest', 'segmentos.json', 'icon-192.png', 'icon-512.png', 'icon-maskable.png'];
 
@@ -30,10 +30,8 @@ self.addEventListener('fetch', e => {
     e.respondWith(caches.open(VIDEOS).then(c => c.match(url.pathname)).then(g => g ? desdeCache(e.request, g) : fetch(e.request)));
     return;
   }
-  // app: primero lo guardado (abre al instante y sin internet) y se actualiza en segundo plano
-  e.respondWith(caches.open(SHELL).then(async c => {
-    const g = await c.match(e.request, { ignoreSearch: true });
-    const red = fetch(e.request).then(r => { if (r.ok) c.put(e.request, r.clone()); return r }).catch(() => g);
-    return g || red;
-  }));
+  // app: primero internet (siempre la versión nueva); sin conexión, lo guardado en el teléfono
+  e.respondWith(caches.open(SHELL).then(c =>
+    fetch(e.request, { cache: 'no-cache' }).then(r => { if (r.ok) c.put(e.request, r.clone()); return r })
+      .catch(() => c.match(e.request, { ignoreSearch: true }))));
 });

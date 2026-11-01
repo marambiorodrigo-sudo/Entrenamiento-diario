@@ -57,7 +57,10 @@ body.reels .note { font-size: 14px }
 .box { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px; display: grid; gap: 10px }
 .box h2 { margin: 0; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted) }
 .seg { display: grid; grid-template-columns: 1fr 1fr; gap: 6px }
-.seg.tres { grid-template-columns: 1fr 1fr 1fr }
+.seg.tres { grid-template-columns: repeat(3, minmax(0, 1fr)) }
+.seg.tres button { padding: 12px 4px; font-size: 14px }
+.wrap > * { min-width: 0 }
+html, body { overflow-x: hidden }
 .seg button.on, .days button.on { background: var(--accent); color: #111; border-color: var(--accent) }
 .days { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px }
 .days button { padding: 10px 2px; font-size: 15px }
@@ -147,7 +150,8 @@ const vid = $('vid');
 let igActual = '';
 const embedDe = u => u.replace(/^(https:\/\/www\.instagram\.com\/(?:reel|p)\/[^/?#]+).*$/, '$1') + '/embed/';
 function mostrarReel(fase) {
-  const f = cur?.fuentes?.[fase]; if (!f) return;
+  const f = cur?.fuentes?.[fase];
+  if (!f) { $('igl').textContent = 'Actualizando rutinas… cierra y vuelve a abrir la app'; return }
   if (igActual !== f[1]) { igActual = f[1]; $('igf').src = embedDe(f[1]) }
   $('igl').href = f[1]; $('igl').textContent = `Abrir en Instagram · ${f[0]}`;
 }
@@ -375,7 +379,7 @@ $('bSave').onclick = async () => {
 };
 
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
-fetch('segmentos.json').then(r => r.json()).then(d => {
+fetch('segmentos.json', { cache: 'no-cache' }).then(r => r.json()).then(d => {
   RUT = d; setModo(modo); cargar(selR, HOY, true); estadoOffline();
 }).catch(() => aviso('No se pudieron cargar las rutinas.'));
 drawPick();
