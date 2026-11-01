@@ -125,7 +125,7 @@ const HOY = KEYS[(new Date().getDay() + 6) % 7];
 const INTRO = 10;
 const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 const fmt = s => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(Math.max(0, s) % 60).padStart(2, '0')}`;
-const videoDe = (rutina, k) => `videos/${rutina === 'Kettlebell' ? 'kb' : 'el'}-${k}.mp4`;
+const videoDe = (rutina, k) => `${rutina === 'Kettlebell' ? 'kb' : 'el'}-${k}.mp4`;
 const vid = $('vid');
 let RUT = [], cur = null, i = 0, left = 0, tick = null, modo = 'timer', starts = [], selR = 'Kettlebell';
 try { modo = localStorage.getItem('modo') || 'timer'; selR = localStorage.getItem('rutina') || 'Kettlebell' } catch (e) {}
