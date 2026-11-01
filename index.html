@@ -33,6 +33,15 @@ button.main { background: var(--accent); border-color: var(--accent); color: #11
 .heard { flex: 1; min-width: 0; color: var(--muted); font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
 .heard em { color: var(--ink); font-style: normal }
 .warn { color: var(--live); font-size: 14px; margin: 0 }
+.ig { display: grid; gap: 6px }
+.ig iframe { width: 100%; height: min(72vh, 640px); border: 0; border-radius: 12px; background: #fff }
+.ig a { color: var(--accent); font-size: 14px; text-align: center }
+/* modo Reels IG: reel y temporizador caben juntos en la pantalla del celular */
+body.reels .ig iframe { height: 56vh }
+body.reels .stage { padding: 10px 14px; gap: 2px }
+body.reels .clock { font-size: clamp(48px, 15vw, 80px) }
+body.reels .name { font-size: clamp(20px, 5.5vw, 28px) }
+body.reels .note { font-size: 14px }
 .vid { width: 100%; border-radius: 12px; background: #000; display: block; max-height: 70vh }
 .stage { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px; display: grid; gap: 6px }
 .top { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; color: var(--muted); font-weight: 600; font-size: 12px; letter-spacing: .06em; text-transform: uppercase }
@@ -48,6 +57,7 @@ button.main { background: var(--accent); border-color: var(--accent); color: #11
 .box { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px; display: grid; gap: 10px }
 .box h2 { margin: 0; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted) }
 .seg { display: grid; grid-template-columns: 1fr 1fr; gap: 6px }
+.seg.tres { grid-template-columns: 1fr 1fr 1fr }
 .seg button.on, .days button.on { background: var(--accent); color: #111; border-color: var(--accent) }
 .days { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px }
 .days button { padding: 10px 2px; font-size: 15px }
@@ -72,6 +82,11 @@ details summary { cursor: pointer; color: var(--muted); font-weight: 600; font-s
 
   <video id="vid" class="vid" controls playsinline hidden></video>
 
+  <div class="ig" id="ig" hidden>
+    <iframe id="igf" title="Reel original de Instagram" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+    <a id="igl" href="#" target="_blank" rel="noopener">Abrir en Instagram</a>
+  </div>
+
   <div class="stage" id="stage">
     <div class="top"><span id="tTitle">Elige una rutina abajo</span><span id="tPhase"></span></div>
     <div class="clock" id="tClock">00:00</div>
@@ -94,8 +109,9 @@ details summary { cursor: pointer; color: var(--muted); font-weight: 600; font-s
       <button type="button" data-r="Elongación">Elongación</button>
     </div>
     <div class="days" id="days"></div>
-    <div class="seg" id="segM">
+    <div class="seg tres" id="segM">
       <button type="button" data-m="timer">Temporizador</button>
+      <button type="button" data-m="reels">Reels IG</button>
       <button type="button" data-m="video">Video</button>
     </div>
   </div>
@@ -109,7 +125,7 @@ details summary { cursor: pointer; color: var(--muted); font-weight: 600; font-s
     <summary>Lo que puedes decir</summary>
     <ul class="cmds">
       <li><q>Kettlebell martes</q>, <q>elongación hoy</q>, <q>yoga test</q></li>
-      <li><q>Video kettlebell lunes</q> · <q>sin video</q></li>
+      <li><q>Video kettlebell lunes</q> · <q>reels</q> (los de Instagram) · <q>sin video</q></li>
       <li><q>Empezar</q> · <q>pausa</q> · <q>continuar</q></li>
       <li><q>Siguiente</q> · <q>anterior</q> · <q>repetir</q> · <q>más tiempo</q></li>
       <li><q>¿Cuánto falta?</q> · <q>¿Qué sigue?</q> · <q>terminar</q> · <q>ayuda</q></li>
@@ -127,6 +143,14 @@ const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 const fmt = s => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(Math.max(0, s) % 60).padStart(2, '0')}`;
 const videoDe = (rutina, k) => `${rutina === 'Kettlebell' ? 'kb' : 'el'}-${k}.mp4`;
 const vid = $('vid');
+// reel original de Instagram de cada fase, con el reproductor oficial de Instagram (insertar)
+let igActual = '';
+const embedDe = u => u.replace(/^(https:\/\/www\.instagram\.com\/(?:reel|p)\/[^/?#]+).*$/, '$1') + '/embed/';
+function mostrarReel(fase) {
+  const f = cur?.fuentes?.[fase]; if (!f) return;
+  if (igActual !== f[1]) { igActual = f[1]; $('igf').src = embedDe(f[1]) }
+  $('igl').href = f[1]; $('igl').textContent = `Abrir en Instagram · ${f[0]}`;
+}
 let RUT = [], cur = null, i = 0, left = 0, tick = null, modo = 'timer', starts = [], selR = 'Kettlebell';
 try { modo = localStorage.getItem('modo') || 'timer'; selR = localStorage.getItem('rutina') || 'Kettlebell' } catch (e) {}
 
@@ -175,7 +199,10 @@ $('days').onclick = e => { const b = e.target.closest('button'); if (b) cargar(s
 
 function setModo(m) {
   modo = m; guardarPref();
-  if (m === 'timer') { vid.pause(); vid.hidden = true; $('stage').hidden = false } else { stop(); $('stage').hidden = true; vid.hidden = false }
+  if (m === 'video') { stop(); $('stage').hidden = true; vid.hidden = false } else { vid.pause(); vid.hidden = true; $('stage').hidden = false }
+  $('ig').hidden = m !== 'reels';
+  document.body.classList.toggle('reels', m === 'reels');
+  if (m !== 'reels') { $('igf').removeAttribute('src'); igActual = '' }
   drawPick(); paint();
 }
 
@@ -204,6 +231,7 @@ function paint() {
   if (!s) { $('tPhase').textContent = 'Terminada'; $('tClock').textContent = '00:00'; $('tName').textContent = 'Sesión terminada';
     $('tNote').textContent = 'Buen trabajo.'; $('tNext').textContent = ''; $('tLeft').textContent = ''; $('tBar').style.width = '100%'; return }
   $('tPhase').textContent = `${s.ph} · ${i + 1}/${cur.segs.length}`;
+  if (modo === 'reels') mostrarReel(s.ph);
   $('tClock').textContent = fmt(left); $('tClock').classList.toggle('rest', !!s.rest);
   $('tName').textContent = s.n; $('tNote').textContent = s.note || '';
   const nx = cur.segs[i + 1]; $('tNext').textContent = nx ? `Sigue: ${nx.n}` : 'Último ejercicio';
@@ -263,6 +291,11 @@ function interpretar(texto) {
   const dias = { lunes: 'L', martes: 'M', miercoles: 'X', jueves: 'J', viernes: 'V', sabado: 'S', domingo: 'D', test: 'T', prueba: 'T', hoy: HOY };
   const dia = Object.keys(dias).find(d => new RegExp('\\b' + d + '\\b').test(t));
   const quitaVideo = /sin video|salir del video|quitar video|temporizador/.test(t);
+  if (/instagram|\breels?\b|\brils?\b/.test(t)) {
+    setModo('reels');
+    if (rutina || dia) cargar(rutina || cur?.rutina || selR, dia ? dias[dia] : HOY); else if (cur) cargar(cur.rutina, cur.k, true);
+    return 'reels';
+  }
   const pideVideo = /\bvideo\b/.test(t) && !quitaVideo;
   if (quitaVideo) { setModo('timer'); if (cur) cargar(cur.rutina, cur.k, true); decir('Modo temporizador.'); return 'sin video' }
   if (rutina || (dia && /rutina|entren|video/.test(t))) {

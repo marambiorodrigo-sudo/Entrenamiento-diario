@@ -1,5 +1,5 @@
 // Service worker: guarda la app para usarla sin internet y sirve los videos guardados (con saltos por rango).
-const SHELL = 'rutinas-app-v2';
+const SHELL = 'rutinas-app-v3';
 const VIDEOS = 'rutinas-videos';
 const ARCHIVOS = ['./', 'index.html', 'manifest.webmanifest', 'segmentos.json', 'icon-192.png', 'icon-512.png', 'icon-maskable.png'];
 
